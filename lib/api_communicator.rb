@@ -53,12 +53,14 @@ def print_movies(films)
   # films.each {|film| puts film["title"]}
   # films.map {|film| film["title"]}.join(\n)
   # films.map {|film| film["title"]}.lines.map(&:chomp)
-  thing = films.map {|film| film["title"]}
-  i = 0
-  while i < thing.length do
-    puts thing[i]
-    i += 1
-  end
+  puts "*********** MOVIE LIST *****************"
+  puts films.map {|film| film["title"]}.join("\n")
+  puts "****************************************"
+  # i = 0
+  # while i < thing.length do
+  #   puts thing[i]
+  #   i += 1
+  # end
 end
 
 def show_character_movies(character)
